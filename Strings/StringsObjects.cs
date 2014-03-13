@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strings
 {
-    class Strings
+    class StringsObjects
     {
         static void Main(string[] args)
         {
