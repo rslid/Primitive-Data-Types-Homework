@@ -10,19 +10,13 @@ namespace CompareFloats
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Comparing floats with precision 0.000001");
-            Console.WriteLine("Please enter first float for comparison:");
-            double first = double.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter second float for comparison:");
-            double second = double.Parse(Console.ReadLine());
-            if ((first - second) <= 0.000001 && (first - second) >= -0.000001)
-            {
-                Console.WriteLine("True! Floats dont have bigger difference than 0.000001");
-            }
-            else
-            {
-                Console.WriteLine("False! Floats have difference bigger than 0.000001");
-            }
+
+            Console.Write("Please enter the first number: ");
+            double first = Double.Parse(Console.ReadLine());
+            Console.Write("Please enter the second number: ");
+            double second = Double.Parse(Console.ReadLine());
+            bool compare = (Math.Abs(first - second) < 0.000001);
+            Console.WriteLine("Are the numbers equal with  precision 0.000001? : {0}", compare);
         }
     }
 }
